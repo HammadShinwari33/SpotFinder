@@ -1,0 +1,786 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+.containers{
+    background-color: #fffdfd;
+    padding: 2vh 4vw 1vh 4vw;
+}
+
+/* ==================== navbar ====================== */
+
+.nav-img{
+    width: 150px;
+    height: 50px;
+    background-size: cover;
+}
+nav{
+    height: 80px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+   margin: 0 5px;
+   padding: 12px 0 0 0;
+}
+nav ul li a{
+    color: #444;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 8px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover{
+    color: rgb(199, 4, 4);
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+nav .menu-btn i{
+    color: #000;
+    padding-left: 2vw;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+
+/* ==================== Parking Simplified ====================== */
+
+.container-2{ 
+    background-color: #f0eded;
+    padding: 5vw 1vw;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.parking-span{
+    color: red;
+}
+.parking-p{
+    color: #444343;
+    padding-top: 2vh;
+    font-size: 18px;
+}
+.first-text{
+    padding-top: 5vh;
+}
+.location{
+    padding: 2vh 31vh 2vh 2vh;
+    border: 2px solid red;
+    border-radius: 4px;
+    font-size: 2.8vh;
+}
+.second-text{
+    padding-top: 5vh;
+}
+.select{
+    padding: 1.5vh 31vh 1.5vh 2vh;
+    border: 2px solid red;
+    border-radius: 4px;
+    font-size: 2.8vh;
+}
+.check{
+    padding-top: 5vh;
+    display: flex;
+    gap: 2vh;
+}
+.check-in{
+    padding: 1.5vh;
+    border: 2px solid red;
+    border-radius: 4px;
+    font-size: 2.3vh;
+    font-weight: 600;
+}
+.check-out{
+    padding: 1.5vh;
+    border: 2px solid red;
+    border-radius: 4px;
+    font-size: 2.3vh;
+    font-weight: 600;
+}
+.parking-btn{
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+}
+.p-btn{
+    padding: 3vh 7vh 3vh 7vh;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    background: red;
+    border: none;
+    border-radius: 5vh;
+}
+.p-btn:hover{
+    background-color: rgb(175, 2, 2);
+}
+
+/* ==================== Everywhere ====================== */
+
+.container-3{
+    justify-content: center;
+    text-align: center;
+    padding: 4vw 2vh 6vw 2vh;
+}
+.e-h2{
+    font-size: 7vh;
+    font-style: italic;
+}
+.e-p{
+    font-size: 3.5vh;
+}
+.everywhere-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 20px;
+    padding-top: 4vw;
+}
+.e-card{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(170, 164, 164);
+}
+.e-card:hover{
+    cursor: pointer;
+}
+.e-card .imges{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.e-card .imges img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+    
+}
+.e-card:hover .imges img{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.e-card .e-content{
+    padding: 8px 10px;
+}
+.e-card .e-card-h4{
+    color: #2e2e2e;
+    font-weight: 600;
+}
+.e-card .card-p{
+    font-size: 17px;
+}
+.e-card .everywhere-btn{
+    padding-bottom: 2vh;
+}
+.e-card .e-btn{
+    color: #fff;
+    background: red;
+    padding: 1.2vh 4vh;
+    border-radius: 12px;
+    border: none;
+    font-weight: 700;
+}
+.e-card .e-btn:hover{
+    background-color: rgb(175, 2, 2);
+}
+
+/* ==================== Spot Finder ====================== */
+
+.container-4{
+    padding: 0 2vh;
+}
+.spot-finder{
+    background: rgb(221, 2, 2);
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 3vw 2vh 2vh 2vh;
+}
+.s-h2{
+    font-size: 7vh;
+    padding-bottom: 2vw;
+    color: #fff;
+    font-style: italic;
+}
+.s-p{
+    font-size: 3.5vh;
+    padding: 0 8vw;
+    color: #fff;
+}
+.spot-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 18px;
+    padding: 25px 40px 40px 40px;
+}
+.s-card{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 18px;
+    background: #fff;
+    text-align: center;
+    padding: 30px;
+}
+.s-card img{
+    height: 120px;
+}
+.s-card h3{
+    color: #444;
+    font-size: 22px;
+    padding: 10px 0;
+}
+.s-card p{
+    color: #2e2d2d;
+    font-size: 17px;
+    line-height: 1.8;
+}
+.s-card:hover{
+    transform: scale(1.03);
+    transition: 0.3s ease-in-out;
+}
+
+/* ==================== Airport Parking ====================== */
+
+.container-5{ 
+    justify-content: center;
+    text-align: center;
+    padding: 5vw 1vw;
+}
+.a-h2{
+    font-size: 6vh;
+    font-style: italic;
+}
+.Airport-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 20px;
+    padding-top: 4vw;
+}
+.a-card{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(170, 164, 164);
+}
+.a-card:hover{
+    cursor: pointer;
+}
+.a-card .imgas{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.a-card .imgas img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+    
+}
+.a-card:hover .imgas img{
+    cursor: pointer;
+}
+.a-card .a-content{
+    padding: 8px 10px;
+}
+.a-card .a-card-h4{
+    color: #2e2e2e;
+    font-weight: 600;
+}
+.a-card .card-p{
+    font-size: 17px;
+}
+.a-card .Airport-btn{
+    padding-bottom: 2vh;
+}
+.a-card .a-btn{
+    color: #fff;
+    background: red;
+    padding: 1.2vh 4vh;
+    border-radius: 12px;
+    border: none;
+    font-weight: 700;
+}
+.a-card .a-btn:hover{
+    background-color: rgb(175, 2, 2);
+}
+
+/* ==================== Reviews ====================== */
+
+.container-6{
+    padding: 0 2vh;
+    justify-content: center;
+    text-align: center;
+}
+.reviews{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 18px;
+    padding: 25px 40px 40px 40px;
+}
+.user-1{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 18px;
+    background: #fff;
+    text-align: center;
+    padding: 30px;
+}
+.user-2{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 18px;
+    background: #fff;
+    text-align: center;
+    padding: 30px;
+}
+.user-h3{
+    color: rgb(175, 106, 2);
+}
+.r-h2{
+    font-size: 6vh;
+    font-style: italic;
+}
+.r-p{
+    padding-top: 3vh;
+    font-size: 18px;
+    font-style: italic;
+    color: rgb(175, 2, 2);
+}
+.r-img{
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+}
+.user-1:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.5s ease-in-out;
+}
+.user-2:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.5s ease-in-out;
+}
+
+/* ==================== Interesting Reads ====================== */
+
+.container-7{
+    justify-content: center;
+    text-align: center;
+    padding: 1vw;
+}
+.i-h3{
+    font-size: 6vh;
+    font-style: italic;
+}
+.reads-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 30px;
+    padding-top: 4vw;
+}
+.i-card{
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid rgb(170, 164, 164);
+}
+.i-card:hover{
+    cursor: pointer;
+}
+.i-card .imgas{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.i-card .imgas img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+    
+}
+.i-card:hover .imgas img{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.i-card .i-content{
+    padding: 8px 10px;
+}
+.i-card .i-card-h4{
+    color: #2e2e2e;
+    font-weight: 600;
+}
+.i-card-p{
+    font-size: 18px;
+}
+.i-card .Airport-btn{
+    padding-bottom: 2vh;
+}
+.i-card .i-btn{
+    color: #fff;
+    background: red;
+    padding: 1.2vh 4vh;
+    border-radius: 12px;
+    border: none;
+    font-weight: 700;
+}
+.i-card .i-btn:hover{
+    background-color: rgb(175, 2, 2);
+}
+
+/* ==================== background image ====================== */
+
+.container-8{ 
+    justify-content: center;
+    text-align: center;
+    padding: 4vw 1vw;
+}
+.background{
+    background-image: url(images/Background/background-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    height: 42vw;
+    border-radius: 15px;
+    color: rgb(221, 212, 212);
+    justify-content: center;
+    text-align: center;
+}
+.back-h1{
+    padding-top: 10vw;
+    font-weight: 700;
+    font-size: 9vh;
+}
+.back-h5{
+    padding-top: 2vh;
+    color: #fff;
+    font-size: 4vh;
+}
+.background-btn{
+    padding-top: 2vw;
+}
+.back-btn{
+    padding: 3vh 6vh;
+    border-radius: 30px;
+    background: red;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+}
+.back-btn:hover{
+    background: rgb(175, 2, 2);
+}
+
+/* ==================== Subscribe ====================== */
+
+.container-9{
+    padding: 0 2vh;
+}
+.subscribe-container{ 
+    background: #f1f0f0;
+    border-radius: 18px;
+    justify-content: center;
+    text-align: center;
+    padding: 2vw 1vw;
+}
+.subs-h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.subs-p{
+    font-size: 3vh;
+}
+.subs-input{
+    padding: 1.5vh 8vh 1.5vh 1.5vh;
+    font-size: 3vh;
+    border-radius: 5px;
+    border: none;
+}
+.subscribe{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.subs-btn{
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 1.7vh;
+    border-radius: 5px;
+}
+
+/* ==================== Footer ====================== */
+
+.footer{
+    padding: 4vh 2vh 2vh 2vh;
+    display: flex;
+    gap: 5vw;
+    justify-content: space-between;
+}
+.footer-img{
+    width: 9vw;
+    height: 3.5vw;
+    background-size: cover;
+}
+.f1-h3{
+    color: red;
+    padding-top: 5px;
+    font-weight: 700;
+    font-size: 4vh;
+}
+.f1-p{
+    padding-top: 1.2vh;
+    font-size: 3vh;
+}
+.f2-h3{
+    color: red;
+    padding-top: 3px;
+    font-weight: 700;
+    font-size: 4vh;
+}
+.f2-p1{
+    font-size: 3vh;
+    padding-top: 1.2vh;
+}
+.f2-p{
+    font-size: 3vh;    
+}
+.f3-h3{
+    color: red;
+    padding-top: 5px;
+    font-weight: 700;
+    font-size: 4vh;
+}
+.contact-link{
+    text-decoration: none;
+    color: #444343;
+}
+.f-img{
+    padding-top: 2vh;
+}
+.f4-h3{
+    color: red;
+    font-weight: 700;
+    font-size: 4vh; 
+}
+.f4-h3-2{
+    color: red;
+    padding-top: 3vh;
+    font-weight: 700;
+    font-size: 4vh;
+}
+.social-links{
+    color: rgb(190, 7, 7);
+    font-size: 3.5vh;
+}
+
+/* ==================== bottom ====================== */
+
+.bottom{
+    padding-top: 2vh;
+    justify-content: center;
+    text-align: center;
+}
+.bottom-p{
+    font-size: 3vh;
+    font-weight: 600;
+    color: #2e2e2e;
+}
+
+@media(max-width:1250px){
+    .container-2{
+        display: flex;
+        flex-wrap: wrap;
+    }  
+} 
+@media(max-width: 1050px){
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 960px){
+    nav .menu-btn i{
+        display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #d6d6d6;
+        color: #fff;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0;
+    }
+    nav ul li{
+        margin: 40px 0;
+    }
+    nav ul li a{
+        font-size: 30px;
+        display: block;
+    }
+    nav ul li a:hover,
+    nav ul li a.active{
+    color: red;
+    background: none;
+    }
+    .background{
+        background-size: cover;
+        text-align: center;
+        justify-content: center;
+        height: 70vh;
+    }
+    .back-h1{
+        font-size: 7vw;
+    }
+    .back-h5{
+        font-size: 3vw;
+    }
+    .footer-img{
+        width: 9vw;
+        height: 3.5vw;
+    }
+    .spot-container{
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media(max-width:650px){
+    .container-2{
+        text-align: center;
+    }
+    .location{
+        padding: 1vh;
+    }
+    .select{
+        padding: 1vh;
+    }
+    .check{
+        display: block;
+        
+    }
+    .check-in{
+        padding: 1.2vh 2vh;
+        font-size: 2.4vh;
+    }
+    .check-out{
+        padding: 1.2vh 2vh;
+        font-size: 2.4vh;
+    }
+    .text-3{
+        padding-bottom: 5vh;
+    }
+    .p-btn{
+        font-size: 15px;
+    }
+    .parking-img{
+        display: none;
+    }
+    .parking-h1{
+        font-size: 30px;
+    }
+    .s-h2{
+        padding-top: 3vw;
+        font-size: 4vh;
+    }
+    .s-p{
+        font-size: 2.5vh;
+        padding: 0 2vw;
+    }
+    .a-h2{
+        font-size: 4vh;
+        padding-top: 3vw;
+    }
+    .subs-h1{
+        padding-top: 3vw;
+    }
+    .e-h2{
+        font-size: 4vh;
+        padding-top: 3vw;
+    }
+    .i-h3{
+        padding-top: 3vw;
+        font-size: 4vh;
+    }
+    .footer-img{
+        width: 25vw;
+        height: 10vw;
+        background-size: cover;
+    }
+}
+@media(max-width: 550px){
+    .back-h1{
+        font-size: 10vw;
+    }
+    .back-h5{
+        font-size: 5vw;
+    }
+    .background-btn{
+        padding-bottom: 5vw;
+    }
+    .background{
+        height: 120vw;
+    }
+    .subscribe{
+        display: block;
+    }
+    .subscribe-btn{
+        padding-top: 2vh;
+    }
+    .subs-input{
+        padding: 1vh 5px 1vh 1vh;
+    }
+    .s-card{
+        padding: 10px;
+    }
+    .spot-container{
+        gap: 28px;
+        padding: 10px;
+        box-shadow: none;
+    }
+    
+}
+@media(max-width: 372px){
+    .container-4{
+        padding: 0;
+    }
+    .reviews{
+        justify-content: center;
+        text-align: center;
+        padding-right: 12vw;
+    }
+    nav .menu-btn i{       
+        padding-left: 8vw;
+    }
+}
